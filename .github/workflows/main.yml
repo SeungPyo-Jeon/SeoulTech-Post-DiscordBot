@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
-
+        with:
+            repository: SeungPyo-Jeon/UniversityAnnouncementAlarm
+            token: ${{secrets.GH_TOKEN }}
+            path: UniversityAnnouncementAlarm
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
