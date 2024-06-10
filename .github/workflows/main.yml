@@ -36,4 +36,4 @@ jobs:
           git config user.email "actions@github.com"
           git add .
           git commit -m "Update articles.json"
-          git push https://${{ secrets.GH_TOKEN }}@github.com/yeonjin1357/action_test.git HEAD:main
+          git push https://${{ secrets.GH_TOKEN }}@github.com/SeungPyo-Jeon/UniversityAnnouncementAlarm.git HEAD:main
