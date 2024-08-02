@@ -32,6 +32,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add .
-          git remote set-url origin https://SeungPyo-Jeon@github.com/SeungPyo-Jeon/UniversityAnnouncementAlarm.git
           git commit -m "Update "
           git push https://${{secrets.GH_TOKEN}}@github.com/SeungPyo-Jeon/UniversityAnnouncementAlarm.git HEAD:main
