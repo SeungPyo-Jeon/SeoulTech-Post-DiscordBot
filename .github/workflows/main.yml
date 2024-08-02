@@ -1,6 +1,7 @@
 name: Run Python Code
 on:
-  
+  schedule:
+    - cron: "0,5,10,15,20,25,30,35,40,45,50,55 0-9 * * 1-5"
   workflow_dispatch:
 
 jobs:
@@ -26,8 +27,17 @@ jobs:
 
       - name: Run Python script
         run: python writetxt.py # 이곳에 실제 파이썬 파일명을 적어주세요.
+      - name : Run notifyMainNotice
+        env:
+          WEBHOOK_MAINNOTICES: ${{ secrets.DISCORD_WEBHOOKS_MAIN_NOTICES}}
+        run: python notifyMainNotice.py
+
+      - name : Run notifyAaiBulletin
+        env:
+          WEBHOOK_AAIBULLETIN: ${{ secrets.DISCORD_WEBHOOKS_AAI_BULLETIN}}
+        run: python notifyAaiBulletin.py        
+      
       - name: Commit and push changes
-        if: steps.changed-files.outputs.files_changed == 'true'
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
