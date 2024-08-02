@@ -2,4 +2,3 @@ requests
 beautifulsoup4
 json5
 discord-webhook
-os
