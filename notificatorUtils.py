@@ -17,15 +17,23 @@ def getNoticeList( ori_url ):
         href = None
         date = None
         color = None
+        #공식 파랑 0A1F62 0A1F62
+        #공식 빨강 C8BFE7 B90005 F71D78
+        #공식 회색 C8BFE7
+        #공식 갈색 B18D4F
+
         td_title = column.select('td')[1].select_one('a')
         if td_title is not None: # 일반글 or 공지글일때
             title = td_title.text.strip()
             href = column.select_one('td.dn2 a').attrs['href']
-            color = "03b2f8"
+            if column.select('td.dn1 img') == []:
+                color = "03b2f8"
+            else:
+                color = "B90005"
         else: #최상단공지글 일때
             title = column.select_one('div').text.strip()
             href = column.select_one('a').attrs['href']
-            color = "000000"
+            color = "B18D4F"
         date = column.select('td.dn5')[-1].text
         
         list_Notice.append( {"title": title, "href":href,"date":date, "color":color} )
