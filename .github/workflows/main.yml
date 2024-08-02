@@ -1,5 +1,7 @@
 name: Run Python Code
-
+on:
+  schedule:
+    - cron: '0 */24 * * * *'
 jobs:
   run-code:
     runs-on: ubuntu-latest
