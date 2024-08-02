@@ -8,12 +8,13 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
-        
+      
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.x
-
+        env:
+          WEBHOOK_MAINNOTICES: ${{ secrets.DISCORD_WEBHOOKS_MAIN_NOTICES}}
       - name: Install system dependencies
         run: sudo apt-get update && sudo apt-get install -y build-essential libffi-dev
 
