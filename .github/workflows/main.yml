@@ -27,9 +27,8 @@ jobs:
       - name: Run Python script
         run: python writetxt.py # 이곳에 실제 파이썬 파일명을 적어주세요.
       - name: Commit and push changes
-        
+        if: steps.changed-files.outputs.files_changed == 'true'
         run: |
-          if: steps.changed-files.outputs.files_changed == 'true'
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add .
