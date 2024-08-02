@@ -25,3 +25,5 @@ jobs:
 
       - name: Run Python script
         run: python writetxt.py # 이곳에 실제 파이썬 파일명을 적어주세요.
+      - name : Run Python script2
+        run: python notifyNotice.py
