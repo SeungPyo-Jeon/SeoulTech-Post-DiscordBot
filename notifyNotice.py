@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import json
-from discord_webhook import DiscordWebhook,DiscordEmbed,DiscordFile
+from discord_webhook import DiscordWebhook,DiscordEmbed
 import os
 
 json_file_path = 'preMainNoticeList.json'
