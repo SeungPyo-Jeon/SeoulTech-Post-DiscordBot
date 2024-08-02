@@ -1,2 +1,2 @@
-with open('hello.txt','w') as f:
-    f.write('hello Python!!')
+with open('a.txt','r') as f:
+    print(f.read())
