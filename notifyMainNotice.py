@@ -2,7 +2,7 @@ from notificatorUtils import *
 import os
 
 json_file_path_main = 'preMainNoticeList.json'
-url_webhook_main = = os.environ['WEBHOOK_MAINNOTICES']
+url_webhook_main = os.environ['WEBHOOK_MAINNOTICES']
 url_seoultech_notice = "https://www.seoultech.ac.kr/service/info/notice/"
 
 curMainNoticeList = getNoticeList(ori_url = url_seoultech_notice)
