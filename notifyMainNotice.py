@@ -18,9 +18,9 @@ for idx in range( len(copy_curMainNoticeList)):
             curNotice = None
             break
         else:
-            preMainNoticeList.append( preNotice)
+            preMainNoticeList.insert(0, preNotice)
     if curNotice is not None:
-        newMainNoticeList.append(curNotice)
+        newMainNoticeList.insert(0,curNotice)
     
 if len(newMainNoticeList):
     notify(webhook_url=url_webhook_main,source_url=url_seoultech_notice,notices= newMainNoticeList)

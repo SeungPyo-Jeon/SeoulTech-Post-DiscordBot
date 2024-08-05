@@ -18,9 +18,9 @@ for idx in range( len(copy_curAaiBulletinList)):
             curNotice = None
             break
         else:
-            preAaiBulletinList.append( preNotice)
+            preAaiBulletinList.insert(0, preNotice)
     if curNotice is not None:
-        newAaiBulletinList.append(curNotice)
+        newAaiBulletinList.insert(0, curNotice)
     
 if len(newAaiBulletinList):
     notify(webhook_url= url_webhook_aai, source_url=url_seoultech_aai_bulletin ,notices= newAaiBulletinList)
