@@ -1,5 +1,8 @@
 # UniversityAnnouncementAlarm
 
+게시판 크롤링 - 변경사항 유/무 확인 - Discord Webhook 연결 
+Github Action 사용.
+추후 AWS Lambda 고려.
 
 notificatorUtils.py (서울과학기술대 게시판 크롤링 모듈)
 
