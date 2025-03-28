@@ -31,8 +31,8 @@ def getNoticeList( ori_url ):
             else:
                 color = "B90005"
         else: #최상단공지글 일때
-            title = column.select_one('div').text.strip()
-            href = column.select_one('a').attrs['href']
+            title = column.select('td')[0].select('div')[0].text.strip()
+            href = column.select('td')[0].select_one('a').attrs['href']
             color = "B18D4F"
         date = column.select('td.dn5')[-1].text
         
