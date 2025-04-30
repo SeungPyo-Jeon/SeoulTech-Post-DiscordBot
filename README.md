@@ -5,9 +5,8 @@
 **Crawling bulletin board -> Ckeck new posts -> notify it by Discord**  
 
 ## Files
-notificatorUtils.py ( Utils 모듈 )  
-notifyMainNotice.py ( 대학공지사항 게시판 크롤링 )  
---preMainNoticeList.json ( 조회목록 )  
-notifyAaiBulletin.py ( 인공지능응용학과 게시판 크롤링)  
---preAaiBulletinList.json  ( 조회목록 )  
-notifyNotice.py(구)  
+notificatorUtils.py ( Utils of crawling, json, discord webhook )  
+notifyMainNotice.py ( "대학공지사항" scheduling file )  
+--preMainNoticeList.json ( Json file for Checking )  
+notifyAaiBulletin.py ( "인공지능응용학과" scheduling file )  
+--preAaiBulletinList.json  ( Json file for Checking )  
