@@ -4,7 +4,7 @@
 **Using Github Action Scheduling,**  
 **Crawling bulletin board -> Ckeck new posts -> notify it by Discord**  
 
-### Files
+## Files
 notificatorUtils.py ( Utils 모듈 )  
 notifyMainNotice.py ( 대학공지사항 게시판 크롤링 )  
 --preMainNoticeList.json ( 조회목록 )  
