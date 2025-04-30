@@ -1,4 +1,5 @@
 # SeoulTech Bulletin Board Notification Discord Bot
+서울과학기술대학교 게시판 알림을 위한 Discord bot 입니다.
 ![Image](https://github.com/user-attachments/assets/14b8ab95-4a9c-41e5-9cda-96a7bb42d058)
 
 **Using Github Action Scheduling,**  
