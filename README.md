@@ -1,5 +1,5 @@
 # 서울과학기술대학교 게시판 알리미 Discord Bot
-![Image](https://github.com/user-attachments/assets/7a001abc-abe2-4c1c-aa36-181a9c43b9b9)
+![Image](https://github.com/user-attachments/assets/14b8ab95-4a9c-41e5-9cda-96a7bb42d058)
 
 게시판 크롤링 - 변경사항 유/무 확인 - Discord Webhook 연결 
 Github Action 사용.
