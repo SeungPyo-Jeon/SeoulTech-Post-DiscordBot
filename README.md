@@ -1,6 +1,7 @@
 # UniversityAnnouncementAlarm
 
 ## 서울과학기술대학교 게시판 알리미 Discord Bot 입니다.
+![Image](https://github.com/user-attachments/assets/92822b8f-74cf-4f8b-a0b7-750da9c4ba92)
 
 게시판 크롤링 - 변경사항 유/무 확인 - Discord Webhook 연결 
 Github Action 사용.
