@@ -34,7 +34,12 @@ jobs:
         env:
           WEBHOOK_AAIBULLETIN: ${{ secrets.DISCORD_WEBHOOKS_AAI_BULLETIN}}
         run: python notifyAaiBulletin.py        
-      
+
+      - name : Run notifyGraduateBulletin
+        env:
+          WEBHOOK_AAIBULLETIN: ${{ secrets.DISCORD_WEBHOOKS_GRADUATE_BULLETIN}}
+        run: python notifyGraduateBulletin.py
+        
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Actions"
