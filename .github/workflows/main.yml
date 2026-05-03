@@ -37,7 +37,7 @@ jobs:
 
       - name : Run notifyGraduateBulletin
         env:
-          WEBHOOK_AAIBULLETIN: ${{ secrets.DISCORD_WEBHOOKS_GRADUATE_BULLETIN}}
+          WEBHOOK_GRADUATEBULLETIN: ${{ secrets.DISCORD_WEBHOOKS_GRADUATE_BULLETIN}}
         run: python notifyGraduateBulletin.py
         
       - name: Commit and push changes
